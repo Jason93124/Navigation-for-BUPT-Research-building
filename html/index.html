@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="SJZ-CN">
+    <head>
+        <meta charset="utf-8">  <!--定义编码格式，防止出现乱码-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">  <!--Edge模式告诉IE以最高级模式渲染文档，也就是任何IE版本都以当前版本所支持的最高级标准模式渲染，避免版本升级造成的影响。-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"><!--content属性值 :
+     width:可视区域的宽度，值可为数字或关键词device-width
+     height:同width
+     intial-scale:页面首次被显示是可视区域的缩放级别，取值1.0则页面按实际尺寸显示，无任何缩放
+     maximum-scale=1.0, minimum-scale=1.0;可视区域的缩放级别，
+     maximum-scale用户可将页面放大的程序，1.0将禁止用户放大到实际尺寸之上。
+     user-scalable:是否可对页面进行缩放，no 禁止缩放-->
+        <title>navigation</title>
+        <link href="../css/index.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>北邮科研楼室内导航</header>
+        <section>
+            <div class="container">
+                <canvas width="1000" height="500" id="map"></canvas>
+                <canvas width="1000" height="500" id="path"></canvas>
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+                <button class="positon">定位</button>
+                <button class="go">导航演示</button>
+            </div>
+        </footer>
+        <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+        <script src="../js/index.js"></script>
+    </body>
+</html>
